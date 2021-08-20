@@ -15,7 +15,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/beginner'>
-              <Button variant='primary'>TRY</Button>
+              <Button variant='primary'>START</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -28,7 +28,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/intermediate'>
-              <Button variant='primary'>TRY</Button>
+              <Button variant='primary'>START</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -41,7 +41,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/expert'>
-              <Button variant='primary'>TRY</Button>
+              <Button variant='primary'>START</Button>
             </Link>
           </Card.Body>
         </Card>
