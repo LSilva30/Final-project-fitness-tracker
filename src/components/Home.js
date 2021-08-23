@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
-      <section className='home-hero'>Lets build your weekly workout!</section>
+      <section className='home-hero'><h2>Lets build your weekly workout!</h2></section>
       <section className='experience-levels'>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant='top' src='holder.js/100px180' />
+          <Card.Img variant='top' src='https://st4.depositphotos.com/12982378/23309/i/600/depositphotos_233093594-stock-photo-racial-man-doing-push-ups.jpg' />
           <Card.Body>
             <Card.Title>BEGINNER</Card.Title>
             <Card.Text>

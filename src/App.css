@@ -11,16 +11,28 @@
 .home-hero {
   display: flex;
   justify-content: center;
-  background-color: bisque;
+  color: white;
+  background-color: black;
+  padding: 10rem;
 }
 
 .experience-levels {
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
+  justify-content: space-evenly;
+  background-color: black;
+  padding-bottom: 10rem;
 }
 
 .btn-primary {
   background-color: black;
   border-color: black;
+}
+
+.workout-group {
+  display: flex;
+}
+
+.exercise-list {
+  list-style-type: none;
 }
