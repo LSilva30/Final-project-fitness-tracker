@@ -1,22 +1,18 @@
 import { Button } from 'react-bootstrap'
 
-function Workout({exercise, handleClick, modifyWorkouts, handleDelete}) {
-  const isCompleted = exercise.completed
+function Workout({ exercise, handleClick }) {
+  const isCompleted = exercise.completed    // go into the exercise and check that the completed is set to True. assign it to variable 'isCompleted'
   return (
     <div className='workout-group'>
-      {modifyWorkouts ? (
-        <Button variant='outline-danger' onClick={() => handleDelete(exercise.name)}>
-          Delete Workout
+        <Button variant={isCompleted ? 'success' : 'outline-success'} onClick={() => handleClick(exercise)}>
+          {isCompleted ? <i className="fas fa-check"/> : <i className="fas fa-check" />}
         </Button>
-      ) : (
-        <Button variant={isCompleted ? 'outline-success' : 'outline-danger'} onClick={() => handleClick(exercise)}>
-          {isCompleted ? <i className="fas fa-check"/> : <i className="fas fa-times" />}
-        </Button>
-      )}
-      <li className='exercise-list'>
-        {`name: ${exercise.name}/ 
-     sets: ${exercise.sets}/ 
-     reps: ${exercise.reps}/`}
+      <li className='exercise-list'>    
+        {                             // the exercise is being set by a map from WorkoutList and setting the data into each field dynamically
+        `name: ${exercise.name}/  
+         sets: ${exercise.sets}/ 
+         reps: ${exercise.reps}/`
+        }
       </li>
     </div>
   )

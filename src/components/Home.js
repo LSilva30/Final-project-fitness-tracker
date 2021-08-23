@@ -7,7 +7,7 @@ function Home() {
       <section className='home-hero'><h2>Lets build your weekly workout!</h2></section>
       <section className='experience-levels'>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant='top' src='https://st4.depositphotos.com/12982378/23309/i/600/depositphotos_233093594-stock-photo-racial-man-doing-push-ups.jpg' />
+          <Card.Img variant='top' src='https://pivotalmotion.physio/wp-content/uploads/2021/01/Deadlift.jpeg' />
           <Card.Body>
             <Card.Title>BEGINNER</Card.Title>
             <Card.Text>
@@ -20,7 +20,7 @@ function Home() {
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant='top' src='holder.js/100px180' />
+          <Card.Img variant='top' src='https://media.istockphoto.com/photos/getting-fit-one-lift-at-a-time-picture-id961254774?k=6&m=961254774&s=612x612&w=0&h=I0n5MSS2dh6ANjGcUg0qmZStmtPn63QHG4hUYCFGsTg=' />
           <Card.Body>
             <Card.Title>INTERMEDIATE</Card.Title>
             <Card.Text>
@@ -33,7 +33,7 @@ function Home() {
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant='top' src='holder.js/100px180' />
+          <Card.Img variant='top' src='https://media.istockphoto.com/photos/muscular-man-working-out-in-gym-strong-male-torso-abs-picture-id924491214?k=6&m=924491214&s=170667a&w=0&h=lRHhI56O149RYkeVBNJt9C0MvBWJ4CLLSOEdiKFF_fw=' />
           <Card.Body>
             <Card.Title>EXPERT</Card.Title>
             <Card.Text>

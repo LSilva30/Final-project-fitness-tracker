@@ -36,6 +36,13 @@ function WorkoutForm({ refetchWorkouts, level }) {
   
   return (
    <Form onSubmit={handleFormSubmit} >
+     <Form.Group controlId='workout-name'>
+      <Form.Label>
+        Name
+      </Form.Label>
+      <Form.Control name='name' type='text' placeholder='input name' onChange={handleChange}/>
+     </Form.Group>
+
      <Form.Group controlId='workout-sets'>
       <Form.Label>
         Sets
@@ -50,12 +57,6 @@ function WorkoutForm({ refetchWorkouts, level }) {
       <Form.Control name='reps' type='number' placeholder='input reps' onChange={handleChange}/>
      </Form.Group>
 
-     <Form.Group controlId='workout-name'>
-      <Form.Label>
-        Name
-      </Form.Label>
-      <Form.Control name='name' type='text' placeholder='input name' onChange={handleChange}/>
-     </Form.Group>
      <Button variant='primary' type='submit'>
       submit
      </Button>

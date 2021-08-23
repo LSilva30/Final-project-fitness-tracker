@@ -29,6 +29,16 @@
   border-color: black;
 }
 
+.workout-mainPage {
+  display: flex;
+}
+
+.CircularProgressbar {
+  width: 100%;
+  vertical-align: middle;
+  height: 60vh;
+}
+
 .workout-group {
   display: flex;
 }
