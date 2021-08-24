@@ -7,12 +7,12 @@ function Workout({ exercise, handleClick }) {
         <Button variant={isCompleted ? 'success' : 'outline-success'} onClick={() => handleClick(exercise)}>
           {isCompleted ? <i className="fas fa-check"/> : <i className="fas fa-check" />}
         </Button>
-        
+        &nbsp;
       <li className='exercise-list'>    
         {                             // the exercise is being set by a map from WorkoutList and setting the data into each field dynamically
-        `name: ${exercise.name}/  
-         sets: ${exercise.sets}/ 
-         reps: ${exercise.reps}/`
+        `${exercise.name}:
+         Sets: ${exercise.sets} / 
+         Reps: ${exercise.reps}`
         }
       </li>
     </div>

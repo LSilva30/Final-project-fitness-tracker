@@ -12,6 +12,11 @@ body {
   background-color: black;
 }
 
+h1 {
+  text-transform: uppercase;
+  color: white;
+  padding: 40px
+}
 
 .home-hero {
   display: flex;
@@ -29,14 +34,16 @@ body {
   padding-bottom: 10rem;
 }
 
-.btn-primary {
+.btn-secondary {
   background-color: rgb(138, 137, 137);
   border-color: rgb(138, 137, 137);
+  /* margin-left: 90px; */
+  font-weight: 700;
 }
 
 .workout-mainPage {
   display: flex;
-  padding: 10rem;
+  padding: 3rem;
   flex-direction: column;
   align-items: center;
 }
@@ -45,6 +52,7 @@ body {
   width: 100%;
   vertical-align: middle;
   height: 60vh;
+  padding: 3rem;
 }
 
 .workout-group {
@@ -55,9 +63,9 @@ body {
   list-style-type: none;
   color: white;
   font-weight: 600;
-    overflow: hidden;
-    max-height: 1.5em;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 1.5em;
+  text-overflow: ellipsis;
 }
 
 .CircularProgressbar {
@@ -85,4 +93,14 @@ div.card-title.h5 {
 
 p.card-text {
   text-align: center;
+}
+
+form {
+  padding: 50px
+}
+
+.form-label {
+  margin-bottom: .5rem;
+  color: white;
+  font-weight: 700;
 }

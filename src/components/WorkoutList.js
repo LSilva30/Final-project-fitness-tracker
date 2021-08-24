@@ -51,6 +51,7 @@ function WorkoutList() {
   return (
     <>
       <div className='workout-mainPage'>
+        <h1>{level}</h1>
         <div>
           {workouts.map((exercise, i) => {      // mapping through the list of exercises, setting the data into single variable "exercise"
             return <Workout key={i} exercise={exercise} handleClick={handleClick} addWorkouts={addWorkouts} />
