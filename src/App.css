@@ -8,6 +8,11 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+body {
+  background-color: black;
+}
+
+
 .home-hero {
   display: flex;
   justify-content: center;
@@ -25,12 +30,15 @@
 }
 
 .btn-primary {
-  background-color: black;
-  border-color: black;
+  background-color: rgb(138, 137, 137);
+  border-color: rgb(138, 137, 137);
 }
 
 .workout-mainPage {
   display: flex;
+  padding: 10rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .CircularProgressbar {
@@ -45,4 +53,36 @@
 
 .exercise-list {
   list-style-type: none;
+  color: white;
+  font-weight: 600;
+    overflow: hidden;
+    max-height: 1.5em;
+    text-overflow: ellipsis;
+}
+
+.CircularProgressbar {
+  width: 50%;
+  vertical-align: middle;
+  height: 20rem;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #408458;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #408458;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+div.card-title.h5 {
+  text-align: center;
+  font-weight: 700;
+}
+
+p.card-text {
+  text-align: center;
 }

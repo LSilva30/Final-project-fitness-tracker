@@ -2,6 +2,7 @@ import { Route, Switch } from 'react-router-dom'
 import WorkoutList from './components/WorkoutList'
 import Header from './components/Header'
 import Home from './components/Home'
+import Recommendations from './components/Recommendations'
 import './App.css'
 
 function App() {

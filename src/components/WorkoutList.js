@@ -50,7 +50,6 @@ function WorkoutList() {
  
   return (
     <>
-      <Button onClick={() => setaddWorkouts(!addWorkouts)}>{addWorkouts ? 'Finish Adding' : 'Add Workouts'}</Button>
       <div className='workout-mainPage'>
         <div>
           {workouts.map((exercise, i) => {      // mapping through the list of exercises, setting the data into single variable "exercise"
@@ -59,10 +58,12 @@ function WorkoutList() {
         </div>
         {addWorkouts ? (
           <WorkoutForm level={level} refetchWorkouts={() => fetchWorkouts(level, setWorkouts)}/>    // if we click modify: show only the form
-        ) : (
-          <WorkoutChart workouts={workouts}/>   // if we unclick modify show the chart
-        )}
+          ) : (
+            <WorkoutChart workouts={workouts}/>   // if we unclick modify show the chart
+            )}
+            <Button variant="secondary" onClick={() => setaddWorkouts(!addWorkouts)}>{addWorkouts ? 'Finish Adding' : 'Add Workouts'}</Button>
       </div>
+      
     </>
   )
 }

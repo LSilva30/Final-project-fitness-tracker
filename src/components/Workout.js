@@ -7,6 +7,7 @@ function Workout({ exercise, handleClick }) {
         <Button variant={isCompleted ? 'success' : 'outline-success'} onClick={() => handleClick(exercise)}>
           {isCompleted ? <i className="fas fa-check"/> : <i className="fas fa-check" />}
         </Button>
+        
       <li className='exercise-list'>    
         {                             // the exercise is being set by a map from WorkoutList and setting the data into each field dynamically
         `name: ${exercise.name}/  
