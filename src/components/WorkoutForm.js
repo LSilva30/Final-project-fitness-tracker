@@ -57,7 +57,7 @@ function WorkoutForm({ refetchWorkouts, level }) {
       <Form.Control name='reps' type='number' placeholder='input reps' onChange={handleChange}/>
      </Form.Group>
 
-     <Button variant='primary' type='submit'>
+     <Button variant='secondary' type='submit'>
       submit
      </Button>
    </Form>

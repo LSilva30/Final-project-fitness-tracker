@@ -14,6 +14,7 @@ body {
 
 h1 {
   text-transform: uppercase;
+  text-align: center;
   color: white;
   padding: 40px
 }
@@ -32,6 +33,19 @@ h1 {
   justify-content: space-evenly;
   background-color: black;
   padding-bottom: 10rem;
+}
+
+/* .btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  width: max-content;
+  margin-left: 65;
+  margin-top: 20;
+} */
+
+.btn-cards {
+  margin-left: 88px;
 }
 
 .btn-secondary {
@@ -57,15 +71,30 @@ h1 {
 
 .workout-group {
   display: flex;
+  align-items: center;
+  /* width: 33%; */
+  padding: 2px;
+  margin-bottom: 1em;
 }
+
+.workout-group-container {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 
 .exercise-list {
   list-style-type: none;
   color: white;
   font-weight: 600;
-  overflow: hidden;
+  font-size: 20px;
+  /* overflow: hidden;
   max-height: 1.5em;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
+  /* padding-top: 7px; */
+  padding-left: 15px;
 }
 
 .CircularProgressbar {
@@ -86,6 +115,7 @@ h1 {
   dominant-baseline: middle;
   text-anchor: middle;
 }
+
 div.card-title.h5 {
   text-align: center;
   font-weight: 700;

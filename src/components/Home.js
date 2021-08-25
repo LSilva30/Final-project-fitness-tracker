@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
-      <section className='home-hero'><h2>Lets build your weekly workout!</h2></section>
+      <section className='home-hero'>
+        {/* <h1>FITPAL</h1> */}
+        <h2>Lets build your weekly workout!</h2>
+      </section>
       <section className='experience-levels'>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src='https://pivotalmotion.physio/wp-content/uploads/2021/01/Deadlift.jpeg' />
@@ -15,7 +18,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/beginner'>
-              <Button variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -28,7 +31,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/intermediate'>
-              <Button variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -41,7 +44,7 @@ function Home() {
               bulk of the card's content.
             </Card.Text>
             <Link to='/workout/expert'>
-              <Button variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START</Button>
             </Link>
           </Card.Body>
         </Card>

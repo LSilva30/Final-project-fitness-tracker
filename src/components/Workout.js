@@ -8,7 +8,7 @@ function Workout({ exercise, handleClick }) {
           {isCompleted ? <i className="fas fa-check"/> : <i className="fas fa-check" />}
         </Button>
         &nbsp;
-      <li className='exercise-list'>    
+      <li className='exercise-list'>
         {                             // the exercise is being set by a map from WorkoutList and setting the data into each field dynamically
         `${exercise.name}:
          Sets: ${exercise.sets} / 
