@@ -1,24 +1,28 @@
 import { Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import weightlifting from '../assets/weightlifting.png'
 
 function Home() {
   return (
     <>
       <section className='home-hero'>
-        {/* <h1>FITPAL</h1> */}
+      
+        <h1 className="silva-strong-title">SILVA<img className="strong-icon" src={weightlifting} alt="icon of a guy lifting a squat bar" />STRONG</h1>
+        <hr className="home-hr"/>
         <h2>Lets build your weekly workout!</h2>
+        <hr className="home-hr"/>
       </section>
       <section className='experience-levels'>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src='https://pivotalmotion.physio/wp-content/uploads/2021/01/Deadlift.jpeg' />
           <Card.Body>
             <Card.Title>BEGINNER</Card.Title>
+            <hr/>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            "Short and simple, a great way for beginners to get started on their physical journey."
             </Card.Text>
             <Link to='/workout/beginner'>
-              <Button className='btn-cards' variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START NOW</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -27,11 +31,10 @@ function Home() {
           <Card.Body>
             <Card.Title>INTERMEDIATE</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            "For those who are looking to push themselves to the next level. You will be challenged to step out of your comfort zone."
             </Card.Text>
             <Link to='/workout/intermediate'>
-              <Button className='btn-cards' variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START NOW</Button>
             </Link>
           </Card.Body>
         </Card>
@@ -40,11 +43,10 @@ function Home() {
           <Card.Body>
             <Card.Title>EXPERT</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            "Advanced exercises that challenge your body for increased strength, power, and extra intensity to acheive greater results."
             </Card.Text>
             <Link to='/workout/expert'>
-              <Button className='btn-cards' variant='secondary'>START</Button>
+              <Button className='btn-cards' variant='secondary'>START NOW</Button>
             </Link>
           </Card.Body>
         </Card>

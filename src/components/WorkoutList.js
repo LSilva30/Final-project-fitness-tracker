@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import Workout from './Workout'
 import WorkoutChart from './WorkoutChart'
 import WorkoutForm from './WorkoutForm'
-import { Button, Col, Row } from 'react-bootstrap'
+import { Button, Col } from 'react-bootstrap'
 
 const fetchWorkouts = (level, setStateFunction) => {
   fetch(`${process.env.REACT_APP_API_ENDPOINT}/workouts`, {
@@ -50,12 +50,13 @@ function WorkoutList() {
  
   return (
     <>
-      <div className='workout-mainPage'>
         <h1>
           <i className="fas fa-dumbbell"/>
           <br/>
         {level}
         </h1>
+        <hr/>
+      <div className='workout-mainPage'>
         <div className="workout-group-container">
           {/* <Row> */}
           {workouts.map((exercise, i) => {      // mapping through the list of exercises, setting the data into single variable "exercise"
@@ -70,7 +71,6 @@ function WorkoutList() {
             )}
             <Button variant="secondary" onClick={() => setaddWorkouts(!addWorkouts)}>{addWorkouts ? 'Finish Adding' : 'Add Workouts'}</Button>
       </div>
-      
     </>
   )
 }
