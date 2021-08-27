@@ -44,7 +44,6 @@ function WorkoutList() {
       }
     )
       .then(() => fetchWorkouts(level, setWorkouts))    // here we are refetching and rerendering the page with the new values on completed after a succesful click
-      // .catch(err => console.log(err))
   }
 
  
@@ -58,11 +57,9 @@ function WorkoutList() {
         <hr/>
       <div className='workout-mainPage'>
         <div className="workout-group-container">
-          {/* <Row> */}
           {workouts.map((exercise, i) => {      // mapping through the list of exercises, setting the data into single variable "exercise"
             return <Col xl={3} lg={3} md={8} sm={10} xs={12}><Workout key={i} exercise={exercise} handleClick={handleClick} addWorkouts={addWorkouts} /></Col>
           })}
-          {/* </Row> */}
         </div>
         {addWorkouts ? (
           <WorkoutForm level={level} refetchWorkouts={() => fetchWorkouts(level, setWorkouts)}/>    // if we click modify: show only the form
