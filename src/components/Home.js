@@ -15,6 +15,8 @@ function Home() {
         <p className="home-quote"><i>You're just a click away from acheiving your fitness goals! Let's build your weekly workout.</i></p>
       </section>
       <section className='experience-levels'>
+
+
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src='https://pivotalmotion.physio/wp-content/uploads/2021/01/Deadlift.jpeg' />
           <Card.Body>
@@ -28,6 +30,9 @@ function Home() {
             </Link>
           </Card.Body>
         </Card>
+
+
+
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src='https://media.istockphoto.com/photos/getting-fit-one-lift-at-a-time-picture-id961254774?k=6&m=961254774&s=612x612&w=0&h=I0n5MSS2dh6ANjGcUg0qmZStmtPn63QHG4hUYCFGsTg=' />
           <Card.Body>
@@ -40,6 +45,9 @@ function Home() {
             </Link>
           </Card.Body>
         </Card>
+
+
+
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src='https://media.istockphoto.com/photos/muscular-man-working-out-in-gym-strong-male-torso-abs-picture-id924491214?k=6&m=924491214&s=170667a&w=0&h=lRHhI56O149RYkeVBNJt9C0MvBWJ4CLLSOEdiKFF_fw=' />
           <Card.Body>
@@ -52,6 +60,8 @@ function Home() {
             </Link>
           </Card.Body>
         </Card>
+
+
       </section>
     </>
   )

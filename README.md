@@ -1,14 +1,24 @@
-# Final Project: still in development....
+# SILVA STRONG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal Fitness app designed to build weekly workouts and track your progress!
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## Home page:
+![Screenshot](silvastrong.png)
 
-### `yarn start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Navigation:
 
-The page will reload if you make edits.\
+Choose level based off your workout experience level and have a weekly workout routine built for you
+
+![Gif](gif1.gif)
+
+Ability to add workouts to your routine:
+![Gif](pic2.png)
+
+<br>
+
+## Demo:
+( http://final-project-ls.s3-website.us-east-2.amazonaws.com/ )
