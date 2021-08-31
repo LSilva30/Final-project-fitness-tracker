@@ -2,8 +2,6 @@
 
 Personal Fitness app designed to build weekly workouts and track your progress!
 
-<br>
-
 ## Home page:
 ![Screenshot](silvastrong.png)
 
