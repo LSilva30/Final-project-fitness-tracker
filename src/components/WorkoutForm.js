@@ -11,7 +11,6 @@ function WorkoutForm({ refetchWorkouts, level }) {
   
   const handleFormSubmit = (e) => {
     e.preventDefault()
-    console.log(formValues)
     fetch(
       `${process.env.REACT_APP_API_ENDPOINT}/workouts/create`,
       {
@@ -27,7 +26,6 @@ function WorkoutForm({ refetchWorkouts, level }) {
   }
 
   const handleChange = e => {
-    console.log(`Dynamic Name: ${e.target.name} | Value: ${e.target.value}`)
     setFormValues({
       ...formValues,
       [e.target.name]: e.target.value

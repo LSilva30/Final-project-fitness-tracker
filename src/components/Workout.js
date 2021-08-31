@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap'
 
 function Workout({ exercise, handleClick }) {
-  const isCompleted = exercise.completed    // go into the exercise and check that the completed is set to True. assign it to variable 'isCompleted'
+  const isCompleted = exercise.completed
   return (
     <div className='workout-group'>
         <Button variant={isCompleted ? 'success' : 'outline-success'} onClick={() => handleClick(exercise)}>
@@ -9,7 +9,7 @@ function Workout({ exercise, handleClick }) {
         </Button>
         &nbsp;
       <li className='exercise-list'>
-        {                             // the exercise is being set by a map from WorkoutList and setting the data into each field dynamically
+        {
         `${exercise.name}:
          Sets: ${exercise.sets} / 
          Reps: ${exercise.reps}`

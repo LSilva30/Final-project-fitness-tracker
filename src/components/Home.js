@@ -9,7 +9,6 @@ function Home() {
       
         <h1 className="silva-strong-title">SILVA<img className="strong-icon" src={weightlifting} alt="icon of a guy lifting a squat bar" />STRONG</h1>
         <hr className="home-hr"/>
-        {/* <h2>Lets build your weekly workout!</h2> */}
         <h2>CHOOSE YOUR LEVEL</h2>
         <hr className="home-hr"/>
         <p className="home-quote"><i>You're just a click away from acheiving your fitness goals! Let's build your weekly workout.</i></p>
@@ -60,7 +59,6 @@ function Home() {
             </Link>
           </Card.Body>
         </Card>
-
 
       </section>
     </>
